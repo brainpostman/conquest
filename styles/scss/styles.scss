@@ -1,0 +1,29 @@
+@import "_reset";
+@import "_commons";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $main-sans-serif;
+}
+
+
+[class*="__container"] {
+    max-width: calc(1170 / 1366 * 100%);
+    margin: 0px auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+@import "_header";
