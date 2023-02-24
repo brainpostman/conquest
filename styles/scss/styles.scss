@@ -7,6 +7,7 @@ html {
 
 body {
     font-family: $main-sans-serif;
+    background-color: $bg-color;
 }
 
 [class*="__container"] {
@@ -65,6 +66,11 @@ body {
 
 .dash_short {
     width: 30px;
+}
+
+.footer {
+    z-index: 50;
+    background-color: $button-and-footer;
 }
 
 @import "_header";
