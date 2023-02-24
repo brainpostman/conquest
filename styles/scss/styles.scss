@@ -9,11 +9,18 @@ body {
     font-family: $main-sans-serif;
 }
 
-
 [class*="__container"] {
     max-width: calc(1170 / 1366 * 100%);
     margin: 0px auto;
 }
+
+@media (min-width: 1601px) {
+    [class*="__container"] {
+        max-width: 1370px;
+        margin: 0px auto;
+    }
+}
+
 
 .wrapper {
     overflow: hidden;
@@ -27,3 +34,4 @@ body {
 }
 
 @import "_header";
+
