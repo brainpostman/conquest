@@ -21,7 +21,6 @@ body {
     }
 }
 
-
 .wrapper {
     overflow: hidden;
     display: flex;
@@ -33,5 +32,40 @@ body {
     flex: 1 1 auto;
 }
 
-@import "_header";
+.section-title {
+}
 
+.section-text {
+}
+.catalog-button {
+    width: 205px;
+    height: 64px;
+    color: $bg-color;
+    background-color: $button-and-footer;
+    transition: background-color 100ms ease 0s;
+}
+
+.catalog-button:hover {
+    background-color: $button-active;
+}
+
+.catalog-button:active {
+    box-shadow: inset 0px 0px 4px 2px $dash;
+}
+
+.dash {
+    display: inline-block;
+    border-bottom: 1px solid $dash;
+    height: 0px;
+}
+
+.dash_long {
+    width: 50px;
+}
+
+.dash_short {
+    width: 30px;
+}
+
+@import "_header";
+@import "_landing";

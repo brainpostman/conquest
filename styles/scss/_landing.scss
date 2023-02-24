@@ -1,0 +1,106 @@
+.landing {
+    padding: 85px 0 0 0;
+    background-color: $section-color;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.text-block {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: $text-dark;
+    gap: 30px;
+    padding: 0 0 0 22px;
+    &__title {
+        font-family: $main-serif;
+        font-style: normal;
+        line-height: 60px;
+        font-weight: 400;
+        font-size: 45px;
+    }
+    &__title > .dash {
+        position: relative;
+        margin-right: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-family: $main-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        margin-left: 58px;
+        margin-top: -25px;
+    }
+
+    &__text {
+        z-index: 50;
+        font-family: $main-sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        width: 258px;
+        margin-left: 58px;
+    }
+
+    &__button {
+        margin-left: 58px;
+    }
+}
+
+.watch {
+    z-index: 1;
+    display: flex;
+    font-family: $serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 18px;
+    &__price {
+        flex: 1 1 0;
+        align-self: flex-start;
+        margin-top: 138px;
+        margin-right: -6px;
+    }
+
+    &__price > .dash {
+        position: relative;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__image {
+        background: url(/resources/landing/Ellipse-cut.svg);
+        background-repeat: no-repeat;
+        padding-left: 248px;
+        margin-left: -248px;
+    }
+
+    &__body {
+        margin-top: 9px;
+    }
+
+    &__info {
+        align-self: flex-end;
+        margin-bottom: 116px;
+        margin-left: -47px;
+    }
+
+    &__info > .dash {
+        position: relative;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 649px) {
+    .landing {
+        padding: 60px 0 0 0;
+    }
+}
