@@ -176,15 +176,15 @@ body {
   align-items: center;
   gap: 7%;
 }
-.menu__link:hover {
+.menu__item:hover {
   text-decoration: underline;
 }
 
 .buttons__facility {
-  transition: filter 200ms ease-in;
+  transition: filter 200ms ease;
 }
 .buttons__facility:hover {
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
 }
 
 .facility__link {
@@ -232,6 +232,7 @@ body {
     margin-top: 60px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 4px 3px -2px rgba(0, 0, 0, 0.2);
     transition: left 300ms ease 0ms;
+    overflow: auto;
   }
   .header:target .menu__body {
     left: 0;
@@ -248,7 +249,6 @@ body {
     align-items: center;
     height: 100%;
     font-size: 20px;
-    overflow: scroll;
   }
   .menu__item {
     margin: 0 0 30px 0;

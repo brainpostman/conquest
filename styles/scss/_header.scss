@@ -66,17 +66,17 @@
         gap: 7%;
     }
 
-    &__link:hover {
+    &__item:hover {
         text-decoration: underline;
     }
 }
 .buttons {
     &__facility {
-        transition: filter 200ms ease-in;
+        transition: filter 200ms ease;
     }
 
     &__facility:hover {
-        filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+        filter: drop-shadow(0 0 2px rgb(0 0 0 / 0.4));
     }
 }
 .facility {
@@ -130,6 +130,7 @@
         margin-top: 60px;
         box-shadow: 0 2px 3px rgb(0 0 0 / 0.2), inset 0 4px 3px -2px rgb(0 0 0 / 0.2);
         transition: left 300ms ease 0ms;
+        overflow: auto;
     }
 
     .header:target {
@@ -150,7 +151,6 @@
         align-items: center;
         height: 100%;
         font-size: 20px;
-        overflow: scroll;
     }
 
     .menu__item {
