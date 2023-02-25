@@ -34,9 +34,18 @@ body {
 }
 
 .section-title {
+    font-family: $main-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
 }
 
 .section-text {
+    font-family: $main-sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .catalog-button {
     width: 205px;
@@ -57,15 +66,12 @@ body {
 .dash {
     display: inline-block;
     border-bottom: 1px solid $dash;
+    width: 30px;
     height: 0px;
 }
 
 .dash_long {
     width: 50px;
-}
-
-.dash_short {
-    width: 30px;
 }
 
 .footer {
@@ -75,3 +81,6 @@ body {
 
 @import "_header";
 @import "_landing";
+@import "_pop-models";
+@import "_pagination";
+@import "_socials";

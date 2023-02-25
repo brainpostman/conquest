@@ -111,12 +111,20 @@
 }
 
 @media (max-width: 767.98px) {
+    .header {
+        position: fixed;
+    }
     .header__container {
         max-width: 90%;
     }
 }
 
 @media (max-width: 649px) {
+
+    .header {
+        position: fixed;
+    }
+
     .header__container {
         min-height: 60px;
     }

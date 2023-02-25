@@ -50,7 +50,7 @@ input::-ms-clear {
   display: none;
 }
 
-button {
+a, button {
   cursor: pointer;
 }
 
@@ -118,6 +118,21 @@ body {
   flex: 1 1 auto;
 }
 
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.section-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .catalog-button {
   width: 205px;
   height: 64px;
@@ -137,15 +152,12 @@ body {
 .dash {
   display: inline-block;
   border-bottom: 1px solid #8B8371;
+  width: 30px;
   height: 0px;
 }
 
 .dash_long {
   width: 50px;
-}
-
-.dash_short {
-  width: 30px;
 }
 
 .footer {
@@ -251,11 +263,17 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .header {
+    position: fixed;
+  }
   .header__container {
     max-width: 90%;
   }
 }
 @media (max-width: 649px) {
+  .header {
+    position: fixed;
+  }
   .header__container {
     min-height: 60px;
   }
@@ -382,6 +400,7 @@ body {
   line-height: 21px;
   width: 258px;
 }
+
 .watch {
   z-index: 1;
   display: flex;
@@ -536,5 +555,256 @@ body {
     font-size: 2.2em;
     max-width: 80%;
     text-align: center;
+  }
+}
+.pop-models__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1B1A17;
+  padding: 86px 0 86px 0;
+  height: 100%;
+}
+.pop-models__see-more {
+  align-self: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 2px 2px 7px 2px;
+  border-bottom: 1px solid #c4c0b6;
+  -webkit-clip-path: inset(2px 2px 0 2px);
+          clip-path: inset(2px 2px 0 2px);
+}
+.pop-models__see-more:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  -webkit-clip-path: inset(2px 2px -3px 2px);
+          clip-path: inset(2px 2px -3px 2px);
+}
+.pop-models__merch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  gap: 34px;
+}
+.pop-models__title {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.merch__display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #FDFDFB;
+  padding: 0 28px 0 28px;
+  font-size: 10px;
+  max-height: 467px;
+}
+.merch__model {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 0.03em;
+  margin-left: 13px;
+  margin-top: 9.64%;
+  margin-bottom: 12px;
+}
+.merch__price {
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-left: 13px;
+}
+.merch .ruble_small {
+  height: 0.8em;
+  margin-left: 2px;
+}
+.merch__image {
+  background: linear-gradient(270.37deg, #e2d0c4 0.3%, rgba(226, 208, 196, 0) 99.67%);
+  padding: 1px;
+  border-radius: 50%;
+}
+.merch__body {
+  border-radius: 50%;
+  background-color: #FDFDFB;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+.merch__info {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6em;
+  margin-left: 13px;
+  margin-top: 24px;
+  margin-bottom: 7.71%;
+  cursor: pointer;
+}
+.merch__info:hover {
+  text-decoration: underline;
+}
+.merch__info > .dash {
+  position: relative;
+  margin-bottom: 4px;
+  margin-right: 19px;
+}
+
+@media (max-width: 767.98px) {
+  .pop-models__title {
+    order: 1;
+  }
+  .pop-models__merch {
+    order: 2;
+    flex-direction: column;
+    gap: 34px;
+  }
+  .pop-models__see-more {
+    margin-top: 34px;
+    order: 3;
+    align-self: center;
+  }
+  .merch__info > .dash {
+    width: 15px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+  }
+  .merch__price {
+    margin-bottom: 10px;
+  }
+}
+.pagination {
+  padding: 52px 0 21px 0;
+  background: url("/resources/pagination/lines.svg"), linear-gradient(90deg, #F7F5EF 34.26%, #FDFDFB 34.26%, #FDFDFB 100%);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: contain;
+}
+.pagination__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 414px;
+}
+.pagination__image-container {
+  height: 100%;
+  flex: 0 0 49.75%;
+  position: relative;
+}
+.pagination__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pagination__info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 6.75%;
+}
+.pagination__title {
+  margin-bottom: 10.1%;
+}
+.pagination__text {
+  margin-bottom: 10.1%;
+  max-width: 77.35%;
+}
+.pagination__buttons {
+  margin-right: 20%;
+}
+
+.buttons__left {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-left: 1px solid #1B1A17;
+  border-bottom: 1px solid #1B1A17;
+  transform: translateY(-2px) rotate(45deg);
+}
+.buttons__page {
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 15px 0 15px;
+}
+.buttons__right {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-right: 1px solid #1B1A17;
+  border-bottom: 1px solid #1B1A17;
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+@media (max-width: 776.98px) {
+  .pagination {
+    padding-top: 65px;
+  }
+  .pagination__image {
+    -o-object-position: 20%;
+       object-position: 20%;
+  }
+}
+@media (max-width: 499.98px) {
+  .pagination {
+    padding-top: 60px;
+  }
+  .pagination__content {
+    flex-direction: column-reverse;
+  }
+  .pagination__image-container {
+    position: unset;
+    max-height: 250px;
+    width: 100%;
+  }
+  .pagination__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: unset;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .pagination__info {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .pagination__title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .pagination__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .pagination__buttons {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 388px) {
+  .pagination {
+    background-size: cover;
   }
 }
