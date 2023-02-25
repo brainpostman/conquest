@@ -113,6 +113,10 @@
 
 @media (max-width: 767.98px) {
     .pop-models {
+        &__container {
+            padding: 43px 0 43px 0;
+        }
+
         &__title {
             order: 1;
         }
