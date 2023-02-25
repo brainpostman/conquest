@@ -50,14 +50,16 @@
 }
 
 .link {
-    &__icon {
-        filter: invert(36%) sepia(16%) saturate(298%) hue-rotate(21deg) brightness(91%) contrast(90%);
-        transition: filter 100ms ease 0s;
+    &_ig:hover {
+        filter: invert(29%) sepia(18%) saturate(6732%) hue-rotate(257deg) brightness(88%) contrast(90%);
     }
 
-    &__icon:hover {
-        filter: invert(76%) sepia(59%) saturate(204%) hue-rotate(334deg) brightness(90%) contrast(84%)
-            drop-shadow(0 0 2px rgb(0 0 0 / 0.4));
+    &_fb:hover {
+        filter: invert(40%) sepia(10%) saturate(3509%) hue-rotate(182deg) brightness(91%) contrast(83%);
+    }
+
+    &_tw:hover {
+        filter: invert(63%) sepia(53%) saturate(4629%) hue-rotate(175deg) brightness(96%) contrast(97%);
     }
 }
 
