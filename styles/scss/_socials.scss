@@ -29,6 +29,10 @@
         font-weight: 700;
     }
 
+    &__text_bold:hover {
+        text-decoration: underline;
+    }
+
     &__links {
         display: flex;
         justify-content: center;
@@ -131,11 +135,19 @@
     .images {
         &__small {
             flex-wrap: none;
-            flex-direction: column;          
+            flex-direction: column;
         }
 
-        &__image, &__image img, &__large, &__large img  {
+        &__image,
+        &__image img,
+        &__large,
+        &__large img {
             position: unset;
+            object-fit: none;
         }
+    }
+
+    .image_2 img {
+        object-position: 50% 70%;
     }
 }

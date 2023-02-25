@@ -161,7 +161,7 @@ body {
 }
 
 .footer {
-  z-index: 50;
+  z-index: 49;
   background-color: #444240;
 }
 
@@ -840,6 +840,9 @@ body {
 .socials__text_bold {
   font-weight: 700;
 }
+.socials__text_bold:hover {
+  text-decoration: underline;
+}
 .socials__links {
   display: flex;
   justify-content: center;
@@ -935,5 +938,89 @@ body {
   }
   .images__image, .images__image img, .images__large, .images__large img {
     position: unset;
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .image_2 img {
+    -o-object-position: 50% 70%;
+       object-position: 50% 70%;
+  }
+}
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 62px 0 42px 0;
+  gap: 20px;
+}
+.footer__column {
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #D0D0CF;
+  margin-bottom: 14px;
+  margin-top: -3px;
+}
+.footer__title {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+.footer__link {
+  color: #D0D0CF;
+}
+.footer__link:visited {
+  color: #D0D0CF;
+}
+
+.footer .logo__img {
+  filter: invert(100%) sepia(24%) saturate(2%) hue-rotate(158deg) brightness(108%) contrast(101%);
+}
+.footer .logo__text {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 600px;
+  }
+  .footer__column {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 424.98px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    padding: 40px 0 40px 0;
+  }
+  .footer__column {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -75,7 +75,7 @@ body {
 }
 
 .footer {
-    z-index: 50;
+    z-index: 49;
     background-color: $button-and-footer;
 }
 
@@ -84,3 +84,4 @@ body {
 @import "_pop-models";
 @import "_pagination";
 @import "_socials";
+@import "_footer";
