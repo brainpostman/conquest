@@ -771,7 +771,7 @@ body {
 }
 @media (max-width: 499.98px) {
   .pagination {
-    padding: 90px 0 20px 0;
+    padding: 102px 0 43px 0;
   }
   .pagination__content {
     flex-direction: column-reverse;
@@ -807,7 +807,7 @@ body {
     margin-bottom: 30px;
   }
   .pagination__buttons {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-right: 0;
   }
 }
@@ -918,7 +918,7 @@ body {
 
 @media (max-width: 499px) {
   .socials {
-    padding: 40px 0 40px 0;
+    padding: 43px 0 43px 0;
   }
   .socials__container {
     flex-direction: column;
@@ -1021,7 +1021,7 @@ body {
     display: flex;
     flex-direction: column;
     max-height: 100%;
-    padding: 40px 0 40px 0;
+    padding: 43px 0 43px 0;
   }
   .footer__column {
     width: 100%;

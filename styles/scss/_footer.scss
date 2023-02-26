@@ -23,12 +23,6 @@
 		margin-top: -3px;
 	}
 
-	&__call {
-	}
-
-	&__mail {
-	}
-
 	&__title {
 		color: $bg-color;
 		font-family: $main-sans-serif;
@@ -85,7 +79,7 @@
 			display: flex;
 			flex-direction: column;
 			max-height: 100%;
-			padding: 40px 0 40px 0;
+			padding: 43px 0 43px 0;
 		}
 		&__column {
 			width: 100%;
