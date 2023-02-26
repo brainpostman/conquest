@@ -794,6 +794,8 @@ body {
   .pagination__info {
     padding: 0;
     margin-bottom: 30px;
+    align-items: flex-end;
+    text-align: end;
   }
   .pagination__title {
     font-size: 26px;
@@ -921,9 +923,6 @@ body {
   .socials__container {
     flex-direction: column;
   }
-  .socials__content {
-    text-align: end;
-  }
   .socials__title {
     font-size: 26px;
   }
@@ -932,7 +931,6 @@ body {
     font-size: 14px;
   }
   .socials__links {
-    align-self: flex-end;
     margin-bottom: 40px;
   }
   .socials__images {

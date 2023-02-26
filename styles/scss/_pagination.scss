@@ -115,6 +115,8 @@
         &__info {
             padding: 0;
             margin-bottom: 30px;
+            align-items: flex-end;
+            text-align: end;
         }
 
         &__title {
@@ -131,7 +133,6 @@
             margin-top: 60px;
             margin-right: 0;
         }
-
     }
 }
 
