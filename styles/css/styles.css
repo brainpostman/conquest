@@ -429,7 +429,7 @@ body {
 }
 .watch__image {
   padding-top: 9px;
-  background: url(/resources/landing/Ellipse-cut.svg);
+  background: url("../../resources/landing/Ellipse-cut.svg");
   background-repeat: no-repeat;
   background-size: contain;
   padding-left: 36.5%;
@@ -687,7 +687,7 @@ body {
 }
 .pagination {
   padding: 52px 0 21px 0;
-  background: url("/resources/pagination/lines.svg"), linear-gradient(90deg, #F7F5EF 34.26%, #FDFDFB 34.26%, #FDFDFB 100%);
+  background: url("../../resources/pagination/lines.svg"), linear-gradient(90deg, #F7F5EF 34.26%, #FDFDFB 34.26%, #FDFDFB 100%);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: contain;
