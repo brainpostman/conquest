@@ -94,6 +94,7 @@
 @media (max-width: 499.98px) {
     .pagination {
         padding: 102px 0 43px 0;
+        background-size: cover;
         &__content {
             flex-direction: column-reverse;
         }
@@ -133,11 +134,5 @@
             margin-top: 45px;
             margin-right: 0;
         }
-    }
-}
-
-@media (max-width: 388px) {
-    .pagination {
-        background-size: cover;
     }
 }
